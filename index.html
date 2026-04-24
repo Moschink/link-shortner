@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shortly – More than just shorter links</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="site-nav">
+  <a class="nav-logo" href="#">Shortly</a>
+  <div class="nav-center">
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Resources</a>
+  </div>
+  <div class="nav-right">
+    <a href="#" class="login">Login</a>
+    <a href="#" class="btn-signup">Sign Up</a>
+  </div>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-nav" id="mobNav">
+  <a href="#">Features</a>
+  <a href="#">Pricing</a>
+  <a href="#">Resources</a>
+  <div class="mob-divider"></div>
+  <a href="#">Login</a>
+  <a href="#" class="mob-signup">Sign Up</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="d-flex flex-column-reverse flex-md-row align-items-center px-4 px-md-5 py-4 py-md-5 gap-4 overflow-hidden ms-5">
+  
+  <!-- Text Side -->
+  <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start text-center text-md-start gap-3 ml-5">
+    <h1 class="fw-bold display-5 lh-sm" style="color: #232127;">
+      More than just <br> shorter links
+    </h1>
+    <p class="text-secondary fs-6 lh-lg">
+      Build your brand's recognition and get detailed <br> insights on how your links are performing.
+    </p>
+    <a href="#" class="btn rounded-pill px-4 py-2 fw-bold text-white m-5" style="background-color: #2acfcf;">
+      Get Started
+    </a>
+  </div>
+
+  <!-- Art Side -->
+  <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+    <img 
+      src="images/illustration-working.svg" 
+      alt="Working illustration" 
+      class="img-fluid"
+      style="max-width: 540px;"
+    />
+  </div>
+
+</section>
+
+<!-- ── SHORTENER ── -->
+<section class="shortener-band">
+  <div class="shortener-box">
+    <div class="input-wrap">
+      <input type="url" id="linkInput" placeholder="Shorten a link here..."/>
+      <p class="err-txt" id="errTxt">Please add a link</p>
+    </div>
+    <button class="btn-shorten" id="shortenBtn">Shorten It!</button>
+  </div>
+  <div class="results" id="results"></div>
+</section>
+
+
+
+<!-- ── STATS ── -->
+<section class="stats-section">
+  <h2>Advanced Statistics</h2>
+  <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+
+  <div class="cards-row">
+    <div class="stat-card">
+      <div class="stat-icon">
+        <!-- bar chart -->
+        <img src="images/icon-brand-recognition.svg" alt="">
+      </div>
+      <h3>Brand Recognition</h3>
+      <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">
+        <!-- target/record -->
+        <img src="images/icon-detailed-records.svg" alt="">
+      </div>
+      <h3>Detailed Records</h3>
+      <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">
+        <!-- plant/custom -->
+        <img src="images/icon-fully-customizable.svg" alt="">
+      </div>
+      <h3>Fully Customizable</h3>
+      <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── BOOST CTA ── -->
+<section class="boost">
+  <div class="boost-wave boost-wave-3"></div>
+  <div class="boost-wave boost-wave-4"></div>
+  <div class="boost-wave boost-wave-1"></div>
+  <div class="boost-wave boost-wave-2"></div>
+  <h2>Boost your links today</h2>
+  <a href="#" class="btn-cyan">Get Started</a>
+</section>
+
+
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-start">
+
+      <!-- Logo -->
+      <div class="col-12 col-md-3 mb-4">
+        <h1 href="#" class="footer-logo text-decoration-none d-block">Shortly</h1>
+      </div>
+
+      <!-- Features -->
+      <div class="col-6 col-md-2 mb-4">
+        <h6>Features</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Link Shortening</a></li>
+          <li><a href="#">Branded Links</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="col-6 col-md-2 mb-4">
+        <h6>Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="col-6 col-md-2 mb-4">
+        <h6>Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end gap-3 mt-3 mt-md-0">
+        
+        <a href="#">
+          <svg viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.31-.09-.79-.17-2 .04-2.87.18-.78 1.17-4.97 1.17-4.97s-.3-.6-.3-1.48c0-1.39.81-2.43 1.81-2.43.85 0 1.27.64 1.27 1.41 0 .86-.55 2.14-.83 3.33-.24.99.5 1.81 1.48 1.81 1.77 0 3.14-1.87 3.14-4.56 0-2.39-1.72-4.06-4.16-4.06-2.84 0-4.5 2.13-4.5 4.32 0 .86.33 1.77.74 2.27a.3.3 0 01.07.29l-.28 1.12c-.04.18-.15.22-.34.13-1.25-.58-2.03-2.41-2.03-3.87 0-3.15 2.29-6.05 6.61-6.05 3.47 0 6.16 2.47 6.16 5.78 0 3.45-2.17 6.22-5.19 6.22-1.01 0-1.97-.53-2.29-1.15l-.62 2.38c-.23.87-.84 1.96-1.25 2.62"/>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4" fill="#232127"/>
+            <circle cx="17.5" cy="6.5" r="1.3" fill="#232127"/>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script src="scripts.js"></script>
+
+</body>
+</html>
